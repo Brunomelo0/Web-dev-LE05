@@ -3,7 +3,7 @@ const contador = document.getElementById('contador')
 const sendbutton = document.getElementById('sendbutton')
 function cont(event) {
     if (event.keyCode >= 48 && event.keyCode <= 90) {
-        contador.innerHTML = textarea.value.length + 1
+        contador.innerHTML = textarea.value.length
     } else if (event.keyCode == 8) {
         if (textarea.value.length < 1)
             contador.innerHTML = 0
@@ -30,7 +30,7 @@ const contadormodal = document.getElementById('contadormodal')
 const sendbuttonmodal = document.getElementById('sendbuttonmodal')
 function contmodal(event) {
     if (event.keyCode >= 48 && event.keyCode <= 90) {
-        contadormodal.innerHTML = textareamodal.value.length + 1
+        contadormodal.innerHTML = textareamodal.value.length
     } else if (event.keyCode == 8) {
         if (textareamodal.value.length < 1)
             contadormodal.innerHTML = 0
